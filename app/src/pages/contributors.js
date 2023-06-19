@@ -1,4 +1,4 @@
-import React from "react";
+// https://www.youtube.com/watch?v=7BwMeBZYVwg
 import Table from "react-bootstrap/Table";
 import "./contributors.css";
 import { Col, Row, Button, Form } from "react-bootstrap";

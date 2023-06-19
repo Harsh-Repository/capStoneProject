@@ -14,6 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./footer/footer";
 import { UserProfile } from "./pages/userProfile";
 import { UserProjects } from "./pages/userProjects";
+import IndividualProject from "./pages/individualProject";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route exact path="/about" element={<AboutUs />} />
         <Route exact path="/projects" element={<Projects />} />
+        <Route exact path="/project/:id" element={<IndividualProject />} />
         <Route exact path="/create" element={<CreateProject />} />
         <Route exact path="/contributors" element={<Contributors />} />
         <Route exact path="/myProjects" element={<UserProjects />} />
