@@ -13,3 +13,5 @@ npm install cors body-parser mongoose dotenv
 npm install -D nodemon
 npm install passport passport-local passport-local-mongoose
 npm install express-session
+npm install jsonwebtoken
+npm install express-router
