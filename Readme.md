@@ -17,7 +17,7 @@
  - React for front end
  - Nodejs/ Express for backend
 
-## api endpints 
+## API Endpoints 
 - /api/v1/auth/login : for handling login functionality
 - /api/v1/auth/register : for handling user registration
 - /api/v1/people/projects : for listing all projects
@@ -28,18 +28,18 @@
 - /api/v1/book/contributeProject/:id : for users find user contributions
 
 
-## wishlist (desirable featues)
-- show current status of the funds received for a project
-- host in online
-- applying redux to reduce api calls
+## Wishlist (desirable features)
+- show the current status of the funds received for a project
+- hosting
+- applying redux to reduce API calls
 - imporve user interface
 
-## deployment details
+## Deployment details
 Yet to deploy/host
 
 ## Challenges Faced
-- user authentication using passport-local, hence replaced with jwt authentication
-- applying redux to reduce api calls
+- user authentication using passport-local, hence replaced with JWT authentication
+- applying redux to reduce API calls
 
 
 ## Packages used
