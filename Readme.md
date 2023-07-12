@@ -36,7 +36,7 @@
 
 ## Deployment details
 Yet to deploy/host back-end.
-Front-end is hosted at, https://main--aesthetic-frangipane-073db9.netlify.app/
+Front-end is hosted at, https://aesthetic-frangipane-073db9.netlify.app/
 
 ## Challenges Faced
 - user authentication using passport-local, hence replaced with JWT authentication
