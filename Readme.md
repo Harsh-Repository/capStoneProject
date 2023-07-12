@@ -1,5 +1,7 @@
 # We The People: Raise funds for anything and everything
- Capstone project of KnowledgeHut-Upgrad FullStack WebDevelopment BootCamp.
+ 
+ The capstone project of KnowledgeHut-Upgrad FullStack WebDevelopment BootCamp.
+ 
  ## Features
  - user can create a new account
  - user can login/ logout
@@ -42,24 +44,24 @@ visit http://13.126.127.106 to see project live.
 
 
 ## Packages used
-# Front-end
-npx create-react-app app
-npm start
-npm install react-bootstrap bootstrap
-npm install bootstrap-icons
-npm install react-router-dom
-npm install axios
-npm install react-redux
-npm install @reduxjs/toolkit
+### Front-end
+- npx create-react-app app
+- npm start
+- npm install react-bootstrap bootstrap
+- npm install bootstrap-icons
+- npm install react-router-dom
+- npm install axios
+- npm install react-redux
+- npm install @reduxjs/toolkit
 
-# Back-end
-npm init
-npm install express
-npm install cors body-parser mongoose dotenv
-npm install -D nodemon
-npm install express-session
-npm install express-router
-npm install jsonwebtoken
-npm install express-router
-npm install jsonwebtoken
-npm install crypto-js
+### Back-end
+- npm init
+- npm install express
+- npm install cors body-parser mongoose dotenv
+- npm install -D nodemon
+- npm install express-session
+- npm install express-router
+- npm install jsonwebtoken
+- npm install express-router
+- npm install jsonwebtoken
+- npm install crypto-js
