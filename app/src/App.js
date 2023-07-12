@@ -1,10 +1,4 @@
 import React from "react";
-// import { store } from "./redux/store";
-// import { Provider } from "react-redux";
-// import { useState } from "react";
-// import { useState, useEffect } from "react";
-// import { useState, useCallback, useEffect } from "react";
-// import {Route, Routes,BrowserRouter,HashRouter as Router,useNavigate,useLocation} from "react-router-dom";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { Home } from "./pages/home/home";
 import AboutUs from "./pages/about/aboutUs";
@@ -19,7 +13,6 @@ import Project from "./pages/projects/project";
 import Login from "./pages/userProfile/loginPage";
 import { useContext } from "react";
 import { AuthContext } from "./authContext/AuthContext";
-// import axios from "axios";
 
 export default function App() {
   // const user = true;

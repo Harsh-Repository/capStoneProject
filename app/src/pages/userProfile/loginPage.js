@@ -42,7 +42,7 @@ export default function Login() {
       const { email, password } = values;
       try {
         const res = await axios.post(
-          "http://localhost:3001/api/v1/auth/login",
+          "https://capstoneproject-wgtb.onrender.com/api/v1/auth/login",
           { email, password }
         );
         setupUser(res.data, dispatch);
@@ -59,7 +59,7 @@ export default function Login() {
       try {
         // eslint-disable-next-line no-unused-vars
         const res = await axios.post(
-          "http://localhost:3001/api/v1/auth/register",
+          "https://capstoneproject-wgtb.onrender.com/api/v1/auth/register",
           { email, username, password }
         );
         setUserMessage("User Created, click already a member and login");

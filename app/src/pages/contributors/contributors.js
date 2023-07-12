@@ -15,7 +15,9 @@ export const Contributors = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/v1/projectData/contributors")
+      .get(
+        "https://capstoneproject-wgtb.onrender.com/api/v1/projectData/contributors"
+      )
       .then((res) => {
         setAllContributors(res.data);
         // dispatch(fetchContributors(res.data));

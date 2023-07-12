@@ -7,7 +7,11 @@ const dotenv = require("dotenv");
 const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://main--aesthetic-frangipane-073db9.netlify.app/",
+  })
+);
 // Have Node serve the files for our built React app
 app.use(express.static(path.resolve(__dirname, "./static")));
 

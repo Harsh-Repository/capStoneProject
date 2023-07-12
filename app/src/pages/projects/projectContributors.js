@@ -11,7 +11,7 @@ export default function ThisProjectContributors() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/api/v1/projectData/contributors/${id}`
+          `https://capstoneproject-wgtb.onrender.com/api/v1/projectData/contributors/${id}`
         );
         setContributors(response.data);
       } catch (error) {

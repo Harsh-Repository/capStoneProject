@@ -13,10 +13,14 @@ export default function Projects() {
   // const dispatch = useDispatch();
 
   useEffect(() => {
-    axios.get("http://localhost:3001/api/v1/projectData/projects").then((res) =>
-      // (res) => dispatch(fetchProjects(res.data))
-      setAllProjects(res.data)
-    );
+    axios
+      .get(
+        "https://capstoneproject-wgtb.onrender.com/api/v1/projectData/projects"
+      )
+      .then((res) =>
+        // (res) => dispatch(fetchProjects(res.data))
+        setAllProjects(res.data)
+      );
   }, []);
   // console.log(allProjects);
 

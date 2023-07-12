@@ -162,7 +162,7 @@ export const CreateProject = () => {
                 e.preventDefault();
                 axios
                   .post(
-                    `http://localhost:3001/api/v1/projectData/createProject`,
+                    `https://capstoneproject-wgtb.onrender.com/api/v1/projectData/createProject`,
                     {
                       // event,
                       name,

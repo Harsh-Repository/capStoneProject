@@ -25,7 +25,9 @@ function Project() {
   const [contribute, setContribute] = useState("");
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/api/v1/projectData/project/${id}`)
+      .get(
+        `https://capstoneproject-wgtb.onrender.com/api/v1/projectData/project/${id}`
+      )
       .then((res) => setProjectDetails(res.data));
   });
 
@@ -139,7 +141,7 @@ function Project() {
                         e.preventDefault();
                         axios
                           .post(
-                            `http://localhost:3001/api/v1/projectData/contributeProject/${id}`,
+                            `https://capstoneproject-wgtb.onrender.com/api/v1/projectData/contributeProject/${id}`,
                             {
                               name,
                               emailAddress,
