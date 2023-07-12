@@ -5,10 +5,10 @@
  - user can login/ logout
  - user can view the projects by filtering based on their categories
  - user can search for projects to find the contributions to respective projects
- - user can create project for raising funds
- - users can contribute funds to others projects
+ - user can create a project for raising funds
+ - user can contribute funds to self/other's projects
  - REST APIs built for handling the user requests for creating projects & contributing to projects
- - versioning of backend apis
+ - versioning of backend APIs
 
  ## Technologies used
  - MongoDB for database
