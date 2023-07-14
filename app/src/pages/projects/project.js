@@ -14,12 +14,11 @@ import {
 import { Tab, Tabs } from "react-bootstrap";
 import ThisProjectContributors from "./projectContributors";
 
-function Project() {
+export default function Project() {
   const [projectDetails, setProjectDetails] = useState("");
 
   const { id } = useParams();
 
-  const now = 60;
   const [name, setName] = useState("");
   const [emailAddress, setEmail] = useState("");
   const [contribute, setContribute] = useState("");
@@ -29,15 +28,23 @@ function Project() {
         `https://capstoneproject-wgtb.onrender.com/api/v1/projectData/project/${id}`
       )
       .then((res) => setProjectDetails(res.data));
-  });
+  }, [id]);
 
-  // console.log(projectDetails._id.contribution);
+  // console.log(projectDetails);
+  let percentageCompleted = 0;
 
-  // const fundStatus = (
-  //   for(i=0; i<length.res.data; i++){
+  if (projectDetails && projectDetails.contribution) {
+    const totalContributions = projectDetails.contribution.reduce(
+      (accumulator, contribution) =>
+        accumulator + parseInt(contribution.contribute, 10),
+      0
+    );
 
-  //   }
-  // );
+    percentageCompleted = (
+      (totalContributions / projectDetails.goal) *
+      100
+    ).toFixed(2);
+  }
 
   return (
     <>
@@ -67,7 +74,6 @@ function Project() {
             <h1>This Project is an initiative by,</h1>
             <br />
             <h5>Name: {projectDetails.name}</h5>
-            <h5>Email: {projectDetails.email}</h5>
             <br />
             <h3>Below are the contributors for this project,</h3>
             <ThisProjectContributors />
@@ -81,10 +87,10 @@ function Project() {
             <div className="contributionStatus">
               <Row>
                 <Col>
-                  <h5>Current Status: </h5>
+                  <h5>Current Status: {percentageCompleted}%</h5>
                   <ProgressBar
-                    now={now}
-                    label={`${now}%`}
+                    now={percentageCompleted}
+                    label={`${percentageCompleted}%`}
                     style={{ height: "fit-content" }}
                   />
                 </Col>
@@ -141,7 +147,7 @@ function Project() {
                         e.preventDefault();
                         axios
                           .post(
-                            `https://capstoneproject-wgtb.onrender.com/api/v1/projectData/contributeProject/${id}`,
+                            `http://localhost:3001/api/v1/projectData/contributeProject/${id}`,
                             {
                               name,
                               emailAddress,
@@ -171,5 +177,3 @@ function Project() {
     </>
   );
 }
-
-export default Project;

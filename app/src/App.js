@@ -8,7 +8,6 @@ import { Contributors } from "./pages/contributors/contributors";
 import NavScroll from "./navbar/navbar";
 import Footer from "./footer/footer";
 import { UserProfile } from "./pages/userProfile/userProfile";
-import { UserProjects } from "./pages/userProfile/userProjects";
 import Project from "./pages/projects/project";
 import Login from "./pages/userProfile/loginPage";
 import { useContext } from "react";
@@ -39,7 +38,6 @@ export default function App() {
             <Route exact path="/create" element={<CreateProject />} />
             <Route exact path="/contributors" element={<Contributors />} />
             <Route exact path="/userProfile" element={<UserProfile />} />
-            <Route exact path="/myProjects" element={<UserProjects />} />
           </>
         )}
       </Routes>

@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://aesthetic-frangipane-073db9.netlify.app",
+    origin: "https://aesthetic-frangipane-073db9.netlify.app/",
   })
 );
 // Have Node serve the files for our built React app

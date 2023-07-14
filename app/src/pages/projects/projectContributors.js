@@ -3,6 +3,7 @@ import { Container, Table } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+
 export default function ThisProjectContributors() {
   const [contributors, setContributors] = useState([]);
   const { id } = useParams();
@@ -22,38 +23,33 @@ export default function ThisProjectContributors() {
     fetchData();
   }, [id]);
 
-  //   console.log("Contributors:", contributors);
-  //   console.log("Contributors type:", typeof contributors);
-  //   console.log("Contributors isArray:", Array.isArray(contributors));
+  const contributions = contributors.contribution || [];
 
   return (
     <>
       <Container>
-        <Table striped bordered hover variant="light">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Contribution</th>
-            </tr>
-          </thead>
-          <tbody>
-            {contributors &&
-              Array.isArray(contributors) &&
-              contributors.map(
-                (project) =>
-                  project.contribution &&
-                  Array.isArray(project.contribution) &&
-                  project.contribution.map((contributor) => (
-                    <tr key={contributor._id}>
-                      <td>{contributor.name}</td>
-                      <td>{contributor.emailAddress}</td>
-                      <td>{contributor.contribute}</td>
-                    </tr>
-                  ))
-              )}
-          </tbody>
-        </Table>
+        {contributions.length === 0 ? (
+          <h5>Awaiting for you to be the first contributor &#x1F60D;</h5>
+        ) : (
+          <Table striped bordered hover variant="light">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contribution</th>
+              </tr>
+            </thead>
+            <tbody>
+              {contributions.map((contribution, index) => (
+                <tr key={index}>
+                  <td>{contribution.name}</td>
+                  <td>{contribution.emailAddress}</td>
+                  <td>{contribution.contribute}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        )}
       </Container>
     </>
   );
