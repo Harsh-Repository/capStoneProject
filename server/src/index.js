@@ -27,13 +27,13 @@ mongoose
     console.error(err);
   });
 
+// Routes for APIs
 const authRoute = require("./routes/auth");
 const projectsData = require("./routes/project");
-// const bookShelfRoute = require("./routes/bookShelf");
 
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/projectData", projectsData);
-// app.use("/api/v1/book", bookShelfRoute);
+
 
 // All other GET requests not handled before will return our React app
 app.get("*", (req, res) => {
