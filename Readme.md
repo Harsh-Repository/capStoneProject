@@ -3,14 +3,14 @@
  The capstone project of KnowledgeHut-Upgrad FullStack WebDevelopment BootCamp.
  
  ## Features
- - user can create a new account
- - user can login/ logout
- - user can view the projects by filtering based on their categories
- - user can search for projects to find the contributions to respective projects
- - user can create a project for raising funds
- - user can contribute funds to self/other's projects
+ - User can create a new account
+ - User can login/ logout
+ - User can view the projects by filtering based on their categories
+ - User can search for projects to find the contributions to respective projects
+ - User can create a project for raising funds
+ - User can contribute funds to self/other's projects
  - REST APIs built for handling the user requests for creating projects & contributing to projects
- - versioning of backend APIs
+ - Versioning of backend APIs
 
  ## Technologies used
  - MongoDB for database
@@ -29,18 +29,31 @@
 
 
 ## Wishlist (desirable features)
-- show the current status of the funds received for a project
-- hosting
-- applying redux to reduce API calls
-- imporve user interface
+- Applying redux to reduce API calls
+- Autoset user's data for all forms within the site 
+- Imporve user interface
 
 ## Deployment details
-Yet to deploy/host back-end.
-Front-end is hosted at, https://aesthetic-frangipane-073db9.netlify.app/
+Demo Link: https://aesthetic-frangipane-073db9.netlify.app/
+
+Front-end deployed using netlify.com
+
+Back-end deployed using render.com
+
+## How to Deploy locally on your machine?
+- Download the zip file of this repo.
+- Unzip it and run "npm install" inside the app & server folders to install all dependencies of the project.
+- Create a .env file inside the src folder of the server. With the following details,
+
+  -- MONGO_STRING="your_mongodb_url_with_credentials"
+
+  -- SECRET_KEY="keep_this_key_secret_and_lengthy"
+
+  -- PORT=3001
 
 ## Challenges Faced
-- user authentication using passport-local, hence replaced with JWT authentication
-- applying redux to reduce API calls
+- User authentication using passport-local, hence replaced with JWT authentication
+- Applying redux to reduce API calls
 
 
 ## Packages used
