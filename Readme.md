@@ -1,7 +1,7 @@
 # `We The People` ~ *Raise funds for anything and everything*
  
- `A website for raising funds for any social/non-social project. Users can create their projects and contribute funds to others'/own projects.`
- 
+A website for raising funds for any social/non-social project. Users can create their projects to raise funds and contribute funds to others'/own projects.
+
  ## Features
  - User can create a new account.
  - User can log in/logout.
