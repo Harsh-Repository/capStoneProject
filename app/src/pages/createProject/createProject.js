@@ -175,7 +175,7 @@ export const CreateProject = () => {
                     }
                   )
                   .then(alert(`Project created Successfully`))
-                  .then((res) => (window.location.href = "https://aesthetic-frangipane-073db9.netlify.app/projects"));
+                  .then((res) => (window.location.href = "/"));
                 setName("");
                 setEmail("");
                 setTitle("");
