@@ -9,5 +9,8 @@ body {
 .card p {
   justify-content: left;
   text-align: justify;
+}
+
+.author {
   font-weight: 600;
 }
