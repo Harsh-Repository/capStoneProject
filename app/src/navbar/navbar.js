@@ -77,12 +77,6 @@ export default function NavScroll() {
                     </Nav.Link>
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item>
-                    <Nav.Link as={Link} to="/myProjects">
-                      My Projects
-                    </Nav.Link>
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
                   <NavDropdown.Item
                     onClick={() => dispatch(logout())}
                     // onClick={handleSignOut}
