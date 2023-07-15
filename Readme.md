@@ -42,7 +42,7 @@ Back-end deployed using `render.com`.
   - `MONGO_STRING="your_mongodb_url_with_credentials"`
   - `SECRET_KEY="keep_this_key_secret_and_lengthy"`
   - `PORT=3001`
-- Replace the endpoints in axios calls of API with http://localhost:3001 URL (*provided backend is running on 3001 port*).
+- Replace the endpoints in axios calls of API inside the app folder with http://localhost:3001 URL (*provided backend is running on 3001 port*).
 - Now run `"npm start"` in both the app & server folders.
 
 ## Challenges Faced
