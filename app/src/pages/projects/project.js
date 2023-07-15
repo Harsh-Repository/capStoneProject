@@ -158,7 +158,7 @@ export default function Project() {
                             alert(`Your contribution submitted Successfully`)
                           )
                           .then(
-                            (res) => (window.location.href = "/contributors")
+                            (res) => (window.location.href = "https://aesthetic-frangipane-073db9.netlify.app/contributors")
                           );
                         setName("");
                         setEmail("");
