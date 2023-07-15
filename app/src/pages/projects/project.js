@@ -147,7 +147,7 @@ export default function Project() {
                         e.preventDefault();
                         axios
                           .post(
-                            `http://localhost:3001/api/v1/projectData/contributeProject/${id}`,
+                            `https://capstoneproject-wgtb.onrender.com/api/v1/projectData/contributeProject/${id}`,
                             {
                               name,
                               emailAddress,
