@@ -72,7 +72,7 @@ export default function Projects() {
                         <Card.Body>
                           <Card.Title>{project.title}</Card.Title>
                           <Card.Text>{project.details}</Card.Text>
-                          <Link to={`/project/${project._id}`} target="_blank">
+                          <Link to={`/project/${project._id}`} >
                             <Button variant="outline-primary">
                               Read More..
                             </Button>
