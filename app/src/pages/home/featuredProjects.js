@@ -40,8 +40,8 @@ export default function FeaturedProjects() {
               <Card.Img variant="top" src={project.imageLink} />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
-                <Card.Text>Author: {project.name}</Card.Text>
-                <Link to={`/project/${project._id}`} target="_blank">
+                <Card.Text className="author">Author: {project.name}</Card.Text>
+                <Link to={`/project/${project._id}`} >
                   <Button variant="outline-primary">Read More..</Button>
                 </Link>
               </Card.Body>
