@@ -6,11 +6,14 @@ A website for raising funds for any social/non-social project. Users can create 
  - User can create a new account.
  - User can log in/logout.
  - User can view the projects by filtering based on their categories.
+   ![image](https://github.com/Harsh-Repository/capStoneProject/assets/98148017/3a3a5d8e-c52a-407a-94ec-b33931ce6844)
  - User can view the project details, contributors' details, create a project or contribute to projects only after logging in. 
  - User can search for projects to find the contributions made to respective projects.
- - User can create a project for raising funds.
+   ![image](https://github.com/Harsh-Repository/capStoneProject/assets/98148017/dcfdfb9e-ca77-4e42-a2b4-78d2068c9d33)
+ - User can create a project for raising funds under CreateProject tab.
  - User can contribute funds to self/others' projects.
- - User can view the status of the contribution received to any particular project under read more details of each project.
+   ![image](https://github.com/Harsh-Repository/capStoneProject/assets/98148017/61f4c9e5-7dcf-424b-a3f8-11edc48a11a3)
+ - User can view the status of the contribution received to any particular project under read more details of each project and the status dynamically updates whenever a contribution is made.
    ![image](https://github.com/Harsh-Repository/capStoneProject/assets/98148017/2ead007f-7952-41c2-a440-24d9550195f7)
  - REST APIs built to handle the user requests for fetching project details, creating new projects & contributing to existing projects.
   
