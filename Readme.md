@@ -10,13 +10,15 @@ A website for raising funds for any social/non-social project. Users can create 
  - User can search for projects to find the contributions made to respective projects.
  - User can create a project for raising funds.
  - User can contribute funds to self/others' projects.
+ - User can view the status of the contribution received to any particular project under read more details of each project.
+   ![image](https://github.com/Harsh-Repository/capStoneProject/assets/98148017/2ead007f-7952-41c2-a440-24d9550195f7)
  - REST APIs built to handle the user requests for fetching project details, creating new projects & contributing to existing projects.
   
  ## Technologies used
  - MongoDB for the database.
  - React for the front end.
  - Nodejs/Express for the backend.
- - JWT token based authentication.
+ - JWT token-based authentication.
 
 ## API Endpoints 
 - `/api/v1/auth/login` : for handling login functionality
